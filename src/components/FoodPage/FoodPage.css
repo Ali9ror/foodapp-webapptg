@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cardImage {
+  width: 100%;
+  margin: 0;
+}
+
+.cardImage > img {
+  max-width: 100%; /* Максимальная ширина картинки */
+  height: auto; /* Автоматическая высота */
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+}
+
+.infoCard {
+  text-align: justify; /* Растягиваем текст по ширине блока */
+  padding-right: 2% ; 
+  padding-left: 2%; 
+}
+
+

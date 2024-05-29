@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .item {
+    padding: 20px 30px;
+    height: auto;
+    display: flex;
+  }
+   
+  .item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+  }
+   
+  .description {
+    padding-top: 10px;
+    width: 115px;
+    height: auto;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+  }
+  .navigateButton {
+    position: fixed;
+    bottom: 10px; /* Отступ снизу */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(100% - 20px); /* Отступ по 10px с каждой стороны */
+    max-width: 500px; /* Максимальная ширина для большей гибкости */
+    height: 50px; /* Высота кнопки */
+    background-color: #00a1f1; /* Голубенький цвет фона */
+    color: white; /* Белый цвет текста */
+    border: none;
+    border-radius: 10px; /* Закругленные края */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+}
+
+.navigateButton:hover {
+    background-color: #008fd1; /* Темнее при наведении */
+}
+
+
+
+/* 
+  @media (max-width: 1440px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  } */

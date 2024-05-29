@@ -1,0 +1,128 @@
+.card {
+  width: 100%;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+  padding: 5%;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(72, 90, 247, 0.2);
+}
+
+.card__top {
+  flex: 0 0 140px; /* Задаем высоту 140px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 7%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличиваем картинку */
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 0;
+}
+
+.card__prices {
+  display: flex;
+  margin-bottom: 10px;
+}
+.card__prices::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+  text-decoration: none;
+}
+
+.card__title:hover {
+  color: #3e6ae1;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #3e6ae1;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #3e6ae1;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+.card__add:hover {
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+
+.counter{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+}
+.counter button{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3e6ae1;
+  color: #3e6ae1;
+  border-radius: 50%;
+  margin: 5%;
+  cursor: pointer;
+}
+
+.counter button:hover{
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+
+.counter button:disabled{
+  cursor: default;
+  opacity: 0.5;
+}
+
+.counter b{
+  margin: 0 5%;
+}

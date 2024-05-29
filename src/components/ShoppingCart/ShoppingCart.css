@@ -1,0 +1,44 @@
+.counter-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+}
+.counter-wrap button{
+  width: 40px;
+  height: 30px;
+  border: 1px solid #3e6ae1;
+  color: #3e6ae1;
+  border-radius: 50%;
+  margin: 5%;
+  cursor: pointer;
+}
+
+.counter-wrap button:hover{
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+
+.counter-wrap button:disabled{
+  cursor: default;
+  opacity: 0.5;
+}
+
+.counter-wrap b{
+  margin: 0 5%;
+}
+
+.total-price::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+  }
+
+.total-price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  margin: 10px;
+}
