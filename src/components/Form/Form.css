@@ -1,0 +1,40 @@
+.cards {
+	display: grid;
+	/* Автоматически заполняем на всю ширину grid-контейнера */
+	grid-template-columns: repeat(auto-fill, 150px);
+	/* width: 100%; */
+	max-width: 1000px; /* Ширина grid-контейнера */
+	justify-content: center;
+	justify-items: center; /* Размещаем карточку по центру */
+	column-gap: 30px; /* Отступ между колонками */
+	row-gap: 40px; /* Отступ между рядами */
+	margin: 70px auto;
+  }
+
+  .navigateButton {
+    position: fixed;
+    bottom: 10px; /* Отступ снизу */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(100% - 20px); /* Отступ по 10px с каждой стороны */
+    max-width: 500px; /* Максимальная ширина для большей гибкости */
+    height: 50px; /* Высота кнопки */
+    background-color: #00a1f1; /* Голубенький цвет фона */
+    color: white; /* Белый цвет текста */
+    border: none;
+    border-radius: 10px; /* Закругленные края */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+}
+
+.navigateButton:hover {
+    background-color: #008fd1; /* Темнее при наведении */
+}
+
